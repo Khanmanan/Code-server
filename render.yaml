@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: my-code-server
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PASSWORD
+        sync: false   # Render will ask you for the value securely
